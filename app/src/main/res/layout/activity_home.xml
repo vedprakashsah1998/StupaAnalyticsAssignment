@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraView"/>
+
+<RelativeLayout
+    android:layout_width="2dp"
+    android:layout_height="660dp"
+    android:background="#FC172F59"
+    android:layout_centerVertical="true"
+    android:layout_marginStart="48dp"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_star_yellow"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/yellow_star"
+        />
+
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_star_grey"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="36dp"
+        android:layout_below="@id/bid"
+        android:id="@+id/grey_star"
+        />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="660dp"
+        android:background="#FC172F59"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_star_24"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="38dp"
+        android:id="@+id/orange_star"
+        android:layout_below="@id/signOutId"
+        android:layout_marginTop="44dp"
+        />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_star_green"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginTop="470dp"
+        android:id="@+id/green_star"
+        />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/blockId"
+        app:tint="#FC172F59"
+        android:src="@drawable/ic_baseline_block_24"/>
+
+<com.google.android.material.textview.MaterialTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:textColor="#FFFFFF"
+    android:textSize="16sp"
+    android:rotation="90"
+    android:id="@+id/signOutId"
+    android:text="Sign out"
+    android:layout_below="@id/blockId"
+    android:layout_marginTop="26dp"
+    android:layout_marginEnd="-4dp"
+    />
+
+<ImageView
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:layout_alignParentEnd="true"
+    android:src="@drawable/undo"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="500dp"
+    android:id="@+id/undoId"
+    app:tint="#FC172F59"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:layout_marginEnd="12dp"
+        android:rotation="90"
+        android:layout_below="@id/undoId"
+        android:layout_marginTop="8dp"
+        />
+
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_block_24"
+            app:tint="#FC172F59"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="600dp"
+            android:id="@+id/bid"
+            />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Undo"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_below="@+id/bid"
+                android:layout_alignParentEnd="true"
+
+                android:rotation="90"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="12dp"
+
+                />
+
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/captureImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        app:backgroundTint="#FFFFFF"
+        android:background="@drawable/camera_click" />
+
+
+
+</RelativeLayout>

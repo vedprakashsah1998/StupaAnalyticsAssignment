@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".SplashActivty">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_desg"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:id="@+id/Sid"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins"
+
+            android:textSize="72sp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/Sid"
+            android:textSize="44sp"
+            android:id="@+id/tupaid"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins"
+
+            android:textColor="#000000"
+            android:text="tupa"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Aid"
+            android:text=" A"
+            android:textSize="72sp"
+            android:fontFamily="@font/poppins"
+
+            android:layout_toEndOf="@+id/tupaid"
+            android:textColor="#000000"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/analytics"
+            android:text="nalytics"
+            android:layout_marginTop="32dp"
+            android:textColor="#000000"
+            android:textSize="44sp"
+            android:fontFamily="@font/poppins"
+            android:layout_toEndOf="@+id/Aid"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

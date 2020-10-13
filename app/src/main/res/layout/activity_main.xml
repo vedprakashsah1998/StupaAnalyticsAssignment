@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B1B"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:id="@+id/main_design"
+        android:background="@drawable/samplebg">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_bg"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sgb"
+            android:id="@+id/centerImg"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centerImg"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lato"
+            android:layout_marginTop="12dp"
+            android:text="@string/app_name"
+            android:id="@+id/appName"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPORTS ANALYTICS"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/appName"
+            android:layout_marginTop="22dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <soup.neumorphism.NeumorphButton
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        android:text="Google Login"
+        app:neumorph_backgroundColor="#1B1B1B"
+        app:neumorph_strokeWidth="2dp"
+        android:id="@+id/googleLogin"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:neumorph_shadowElevation="6dp"
+        app:neumorph_strokeColor="#5B7FB1"
+        app:neumorph_shadowColorLight="#14458C"
+        app:neumorph_shadowColorDark="#010D1E"
+        android:drawableStart="@drawable/ic_google_login"
+        app:neumorph_lightSource="leftTop"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
